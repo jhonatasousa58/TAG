@@ -265,15 +265,24 @@ int main(){
     Grafo *grafo = new Grafo(34);
     grafo->montaGrafo();
 
-    cout << "Bacharelado em Ciencia da Computacao" << endl;
+    cout << "Curso: Bacharelado em Ciencia da Computacao" << endl;
     cout << "Disciplinas do curso:" << endl << endl;
+    
+    cout << "Pressione enter para continuar" << endl;
+    getchar();
+
     grafo->printGrafo(grafo);
-	
+		
+    cout << "Pressione enter para continuar" << endl;
+    getchar();
+
 	OrdenacaoTopologica top;
     cout << endl;
     top.sortTopological(grafo);
-
-    cout << endl;
+	
+	cout << endl;
+	cout << "Pressione enter para continuar" << endl;
+    getchar();
 	vector<vector<int>> caminhoCritico = grafo->cpm(grafo);
     cout << "Caminho Critico do grafo: " << endl;
     printV(caminhoCritico[0]);
